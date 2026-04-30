@@ -125,6 +125,12 @@ MIT License
 pnpm install
 ```
 
+也可以选择nix
+```bash
+nix develop
+pnpm install
+```
+
 ### 2. 配置环境变量
 
 创建 `.env` 文件：
@@ -165,6 +171,8 @@ task
 ```
 
 ---
+
+
 
 ## 📁 项目结构
 
