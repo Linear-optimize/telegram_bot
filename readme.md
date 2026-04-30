@@ -19,6 +19,7 @@ A lightweight Telegram bot built with **TypeScript** and **grammy**, featuring A
 * **grammy** — Telegram Bot framework
 * **OpenAI SDK** — Used to access DeepSeek API
 * **pnpm** — Fast package manager
+* **Nix** — Reproducible development environment
 
 ---
 
@@ -27,6 +28,13 @@ A lightweight Telegram bot built with **TypeScript** and **grammy**, featuring A
 ### 1. Install dependencies
 
 ```bash
+pnpm install
+```
+
+Or enter the Nix development shell (provides Node.js, pnpm, TypeScript automatically):
+
+```bash
+nix develop
 pnpm install
 ```
 
@@ -78,6 +86,7 @@ task
 ```
 .
 ├── main.ts          # Entry point
+├── flake.nix        # Nix development environment
 ├── Taskfile.yml     # Task definitions
 ├── .env             # Environment variables
 ├── package.json     # Project config
@@ -114,6 +123,7 @@ MIT License
 * **grammy**（Telegram Bot 框架）
 * **OpenAI SDK**（用于调用 DeepSeek API）
 * **pnpm**（包管理工具）
+* **Nix**（可复现开发环境）
 
 ---
 
@@ -125,7 +135,8 @@ MIT License
 pnpm install
 ```
 
-也可以选择nix
+或者进入 Nix 开发环境（自动提供 Node.js、pnpm、TypeScript）：
+
 ```bash
 nix develop
 pnpm install
@@ -179,6 +190,7 @@ task
 ```
 .
 ├── main.ts          # 主入口
+├── flake.nix        # Nix 开发环境
 ├── Taskfile.yml     # Task 配置
 ├── .env             # 环境变量
 ├── package.json     # 项目配置
