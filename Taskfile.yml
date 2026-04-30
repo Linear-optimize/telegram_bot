@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: "3"
+
+vars:
+  GREETING: Hello, world!
+
+tasks:
+  default:
+    desc: list all commands
+    cmds:
+      - task --list
+    silent: true
+  run:
+    desc: run ts demo
+    cmds:
+      - pnpm tsx main.ts
+
+  fomat:
+    desc: format files
+    cmds:
+      - pnpm prettier --write .
