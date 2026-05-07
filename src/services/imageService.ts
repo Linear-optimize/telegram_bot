@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-import { logger } from "../utils/logger.ts";
-=======
-import { logger } from "../utils/logger.js";
->>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53
+
+import { logger } from "../utils/logger";
+
 
 const headers = {
   "User-Agent":
@@ -22,8 +20,5 @@ export const fetchImageUrl = async (): Promise<string> => {
   }
 
   return data.acgurl;
-<<<<<<< HEAD
+
 };
-=======
-};
->>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53

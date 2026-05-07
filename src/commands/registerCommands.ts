@@ -1,13 +1,8 @@
 import type { Bot } from "grammy";
-<<<<<<< HEAD
+
 import { askModel } from "../services/askService";
 import { fetchImageUrl } from "../services/imageService";
 import { logger } from "../utils/logger";
-=======
-import { askModel } from "../services/askService.js";
-import { fetchImageUrl } from "../services/imageService.js";
-import { logger } from "../utils/logger.js";
->>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53
 
 export const registerCommands = (bot: Bot) => {
   bot.command("start", (ctx) => {
@@ -58,8 +53,5 @@ export const registerCommands = (bot: Bot) => {
     logger.info("Text message received", { from: ctx.from?.id, textLength: text.length });
     return ctx.reply(`you say: ${text}`);
   });
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53
+
