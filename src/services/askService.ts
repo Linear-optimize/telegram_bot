@@ -1,5 +1,9 @@
 import { OpenAI } from "openai/client.js";
+<<<<<<< HEAD
 import  {logger}  from "../utils/logger";
+=======
+import { logger } from "../utils/logger.js";
+>>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53
 
 export const askModel = async (prompt: string): Promise<string> => {
   const apiKey = process.env.API_KEY;
@@ -27,4 +31,8 @@ export const askModel = async (prompt: string): Promise<string> => {
   });
 
   return completion?.choices[0]?.message.content ?? "No answer";
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 5d7a7faac8d28e842e46debc1071373dc72f1c53
