@@ -2,8 +2,6 @@
 
 version: "3"
 
-
-
 tasks:
   default:
     desc: list all commands
@@ -19,3 +17,5 @@ tasks:
     desc: format files
     cmds:
       - pnpm prettier --write .
+
+
